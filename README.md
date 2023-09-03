@@ -59,8 +59,3 @@ Custom settings:
     );
 ```
 
-## See also
-
- - [github repo](https://github.com/yurii-khi/text_scroll)
- - [pub.dev package](https://pub.dev/packages/text_scroll)
- - [api reference](https://pub.dev/documentation/text_scroll/latest/text_scroll/TextScroll-class.html)
