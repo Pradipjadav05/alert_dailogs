@@ -1,16 +1,16 @@
-# alert_dailogs
+# alert_dialogs
 
 A flutter widgets for different different dialogs.
 ## Features
 
  - show Alert Dialog with icons and button
  - show warning dialog with icons and button
- - show confirmation dialog with icons and button also conformation calback function.
+ - show confirmation dialog with icons and button also conformation callback function.
 
 
 ## Getting started
 
-To use this package, add alert_dailogs as a dependency in your pubspec.yaml file.
+To use this package, add alert_dialogs as a dependency in your pubspec.yaml file.
 
 ## Usage
 

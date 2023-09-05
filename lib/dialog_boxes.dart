@@ -1,4 +1,4 @@
-library alert_dailogs;
+library dialog_boxes;
 
 import 'package:flutter/material.dart';
 
@@ -12,10 +12,10 @@ class CustomIconDialog extends StatelessWidget {
 
   const CustomIconDialog(
       {Key? key,
-        required this.dialogType,
-        required this.title,
-        required this.content,
-        this.onConfirm})
+      required this.dialogType,
+      required this.title,
+      required this.content,
+      this.onConfirm})
       : super(key: key);
 
   IconData _getIcon() {
@@ -36,7 +36,13 @@ class CustomIconDialog extends StatelessWidget {
         children: <Widget>[
           Icon(_getIcon()),
           const SizedBox(width: 8), // Adjust the spacing as needed
-          Text(title),
+          Expanded(
+            child: Text(
+              title,
+              overflow: TextOverflow.ellipsis,
+              maxLines: 2,
+            ),
+          ),
         ],
       ),
       content: Text(content),
