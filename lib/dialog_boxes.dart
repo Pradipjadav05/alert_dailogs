@@ -2,7 +2,7 @@ library dialog_boxes;
 
 import 'package:flutter/material.dart';
 
-enum DialogType { alert, warning, confirmation }
+enum DialogType { alert, warning, confirmation, success }
 
 class CustomIconDialog extends StatelessWidget {
   final DialogType dialogType;
@@ -26,6 +26,8 @@ class CustomIconDialog extends StatelessWidget {
         return Icons.error;
       case DialogType.confirmation:
         return Icons.question_answer;
+      case DialogType.success:
+        return Icons.done;
     }
   }
 
