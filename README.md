@@ -17,45 +17,10 @@ To use this package, add alert_dialogs as a dependency in your pubspec.yaml file
 Minimal example:
 
 ```dart
-   showDialog(
-    context: context,
-    builder: (context) {
-      return CustomIconDialog(
+   CustomIconDialog(
         dialogType: DialogType.alert,
-        content: "Alert Dialog",
-        title: "Warning",
-        onConfirm: () {
-          // some code...
-        },
-      );
-    },
-  );
-```
-
-Custom settings:
-
-```dart
-    showDialog(
-      context: context,
-      builder: (context) {
-        return CustomIconDialog(
-          dialogType: DialogType.alert,
-          content: "Alert Dialog",
-          title: "Warning",
-          onConfirm: () {
-            showDialog(
-              context: context,
-              builder: (context) {
-                return const CustomIconDialog(
-                  content: "Sure...!!",
-                  dialogType: DialogType.alert,
-                  title: 'Title',
-                );
-              },
-            );
-          },
-        );
-      },
+        title: "",
+        content: "Sure...!!",
     );
 ```
 

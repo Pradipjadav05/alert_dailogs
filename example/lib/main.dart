@@ -60,14 +60,15 @@ class DialogBoxDemo extends StatelessWidget {
                       content: "Do you want to close Application.",
                       onConfirm: () {
                         showDialog(
-                            context: context,
-                            builder: (context) {
-                              return const CustomIconDialog(
-                                dialogType: DialogType.alert,
-                                title: "",
-                                content: "Sure...!!",
-                              );
-                            });
+                          context: context,
+                          builder: (context) {
+                            return const CustomIconDialog(
+                              dialogType: DialogType.alert,
+                              title: "",
+                              content: "Sure...!!",
+                            );
+                          },
+                        );
                       },
                     );
                   },
